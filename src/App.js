@@ -24,7 +24,7 @@ export default class App extends Component {
       {
         title: 'Watch a movie',
         id: uuidv4(),
-        completed: false
+        completed: true
       }
     ]
   }
@@ -61,15 +61,15 @@ export default class App extends Component {
         <div className="App">
           <div className="container">
             <Header />
-            <Route exact path="/todo-app" render={props => (
-              <div>
+            <Route exact path="/" render={props => (
+              <React.Fragment>
                 <AddTodo addTodo={this.addTodo} />
                 <Todos
                   todos={this.state.todos}
                   markComplete={this.markComplete}
                   delTodo={this.delTodo} />
 
-              </div>
+              </React.Fragment>
             )} />
 
             <Route path="/about" component={About} />
