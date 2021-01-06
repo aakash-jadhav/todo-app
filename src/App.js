@@ -24,7 +24,7 @@ export default class App extends Component {
       {
         title: 'Watch a movie',
         id: uuidv4(),
-        completed: true
+        completed: false
       }
     ]
   }
