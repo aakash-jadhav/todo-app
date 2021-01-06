@@ -61,7 +61,7 @@ export default class App extends Component {
         <div className="App">
           <div className="container">
             <Header />
-            <Route exact path="/" render={props => (
+            <Route exact path="/todo-app" render={props => (
               <div>
                 <AddTodo addTodo={this.addTodo} />
                 <Todos
